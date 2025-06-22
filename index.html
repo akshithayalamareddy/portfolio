@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/649f185f7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Student at B V Raju Institute Of Technology</p>
+                <h1>Hi, I'm <span>Akshitha Yalamareddy</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aks.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm an undergraduate student in Computer Science and I'm enthusiastic about AI, Web Development, and Data Science.
+                    I have built projects like an online food ordering system and some ML-based classifiers, while always leveraging my skills in HTML, CSS, Python, and Django. I'm a fast learner who enjoys solving real-world problems and learning new things through hands-on experience and collaboration.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('coding')">Coding Profiles</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span><br>Java, C, Python, SQL</li>
+                            <li><span>Core Concepts:</span><br>Data Structures & Algorithms, OOPs, Problem Solving</li>
+                            <li><span>Web Development:</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Tools & Technologies:</span><br>Git, GitHub, MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B V Raju Institute of Technology - Narsapur</span><br>B.Tech in CSE - Artificial Intelligence and Machine Learning<br>CGPA: 9.26</li>
+                            <li><span>Sri Chaitanya Junior College - Vijayawada</span><br>MPC<br>Marks: 973/1000</li>
+                            <li><span>Century High School - Kalluru</span><br>Grade: 10/10</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship</span><br>AI & Prompt Engeering Internship at NOMISO</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="coding">
+                        <ul>
+                            <li>
+                                <a href="https://leetcode.com/u/Akshithayalamareddy/" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" width="20" style="vertical-align:middle;"> 
+                                    <span>LeetCode</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.codechef.com/users/akshitha60" target="_blank">
+                                    <img src="https://cdn.codechef.com/images/cc-logo.svg" alt="CodeChef" width="20" style="vertical-align:middle;"> 
+                                    <span>CodeChef</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.geeksforgeeks.org/user/22211a36r6/" target="_blank">
+                                    <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="GeeksforGeeks" width="20" style="vertical-align:middle;"> 
+                                    <span>GeeksforGeeks</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://mentorpick.com/profile/22211a66c7-akshitha" target="_blank">
+                                    <img src="https://mentorpick.com/static/images/mplogo.png" alt="MentorPick" width="20" style="vertical-align:middle;">
+                                    <span>MentorPick</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Neural Network Design with NLP</h2>
+                    <p>
+                        Built a multilingual AI system that generates optimized neural network architectures using NLP and Neural Architecture Search (NAS) via AutoKeras. Achieved 0.92 F1-score across English, Hindi, and Telugu. Integrated Google Translate and spaCy for multilingual support.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Crime Detection using CCTV Footage</h2>
+                    <p>
+                        Developed an AI-powered surveillance system using CNNs, RNNs, and TensorFlow for human detection, weapon detection, and real-time alerts. Achieved 89.6% accuracy using SCVD dataset with OpenCV and motion tracking techniques.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <h2>Online Food Ordering Website</h2>
+                    <p>
+                        Designed a full-stack responsive food ordering platform with HTML, CSS, and MySQL. Included product listing, search, and cart management, optimized for both desktop and mobile, with a strong focus on UX and real-time checkout experience.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="services-list">
+        
+        <div>
+            <i class="fa-solid fa-certificate"></i>
+            <h2>NPTEL – LLM</h2>
+            <p>Certified by NPTEL in Large Language Models and their applications.</p>
+            <a href="https://drive.google.com/file/d/1t_edE2lvs-FKCOgudAZETkVRVWZsRkWP/view?usp=sharing" target="_blank">View Certificate</a>
+        </div>
+        
+        <div>
+            <i class="fa-solid fa-certificate"></i>
+            <h2>NPTEL – Soft Skills</h2>
+            <p>Completed Soft Skills training certified by NPTEL for communication and workplace etiquette.</p>
+            <a href="https://drive.google.com/file/d/1Fr8WRhu-tTc1SjzfzLm6xGCBA9uMZMhM/view?usp=sharing" target="_blank">View Certificate</a>
+        </div>
+        
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>TASK – Frontend Development</h2>
+            <p>Certified by TASK in Frontend Web Development using JavaScript.</p>
+            <a href="https://drive.google.com/file/d/1DPE7qNbapx8p_7yYcwdQgWurZqipW7O2/view?usp=sharing" target="_blank">View Certificate</a>
+        </div>
+        
+        <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Oracle Academy – SQL Programming</h2>
+            <p>Earned Oracle Academy certification in Database Programming with SQL.</p>
+            <a href="https://drive.google.com/file/d/1PySF8zopSlga5cGxKyRxHICr-n8gHXLH/view?usp=sharing" target="_blank">View Certificate</a>
+        </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div id="contact">
+  <div class="container">
+    <h1 class="sub-title">Contact Me</h1>
+    <form action="https://formspree.io/f/xqabdrpb" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+      </div>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <div class="button-group">
+        <button type="submit" class="btn">Send Message</button>
+        <a href="https://drive.google.com/file/d/1sysFqV68np9EgENessKYsevEfbtgyuPG/view?usp=drive_link" download class="btn">Download Resume</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+    
+    <footer>
+  <div class="container">
+    <p>© 2025 Akshitha Yalamareddy</p>
+
+    <div class="contact-info">
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:akshithayalamareddy01@gmail.com">akshithayalamareddy01@gmmail.com</a>
+      </p>
+      <p>
+        <i class="fas fa-phone-alt"></i>
+        <a href="tel:+917995359676">+91 7995359676</a>
+      </p>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/akshitha-yalamareddy-aa024a259/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
